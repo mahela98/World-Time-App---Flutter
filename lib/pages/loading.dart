@@ -10,7 +10,7 @@ class _LoadingState extends State<Loading> {
 
    String time='loading';
 
-  void setupWorldtime() async{
+  void setupWorldTime() async{
     WorldTime instance = WorldTime(location:'Berlin', flag:'', url:'Africa/Monrovia');
     await instance.getTime();
     print('time' + instance.time);
@@ -21,7 +21,7 @@ class _LoadingState extends State<Loading> {
   @override
   void initState() {
     super.initState();
-   setupWorldtime();
+   setupWorldTime();
   }
 
   @override
