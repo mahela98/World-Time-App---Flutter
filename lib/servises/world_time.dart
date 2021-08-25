@@ -7,13 +7,13 @@ class WorldTime {
   String time = '0';
   String flag;
   String url = 'Africa/Monrovia';
-  bool isDaytime;
+  bool isDaytime=true;
 
   WorldTime(
       {required this.location,
       required this.flag,
       required this.url,
-      required this.isDaytime});
+     });
 
   Future<void> getTime() async {
     try {
